@@ -1,7 +1,7 @@
 #coding:utf-8
 import maya.cmds as cmds
-import time
-
+import time,re,os
+import maya.mel as mel
 
 def rt():
 	if(cmds.window('re_ref_win',q=True,ex=True)):cmds.deleteUI('re_ref_win')
